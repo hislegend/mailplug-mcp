@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mailplug-mcp"
+version = "0.1.0"
+description = "MCP server for Mail Plug — send polished Korean business emails and read inbox via Claude."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Crabs Inc.", email = "contact@crabs.ai" }
+]
+requires-python = ">=3.10"
+keywords = ["mcp", "mail", "mailplug", "smtp", "imap", "claude"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "mcp>=1.0.0",
+  "keyring>=24.0",
+  "markdown-it-py>=3.0",
+  "premailer>=3.10",
+  "bleach>=6.1",
+  "beautifulsoup4>=4.12",
+  "lxml>=5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+mailplug-mcp = "mailplug_mcp.server:main"
+mailplug-mcp-setup = "mailplug_mcp.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/crabs-ai/mailplug-mcp"
+Issues = "https://github.com/crabs-ai/mailplug-mcp/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM", "RUF"]
+ignore = ["E501"]

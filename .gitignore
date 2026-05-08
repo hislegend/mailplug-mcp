@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environments and secrets — never commit these
+.env
+.env.local
+*.env
+config.local.json
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Local drafts (mailplug-mcp runtime)
+.drafts/
+*.eml.draft
+
+# One-off scratch files (signature import staging, etc.)
+.tmp_*
+*.tmp.html
+*.tmp.json

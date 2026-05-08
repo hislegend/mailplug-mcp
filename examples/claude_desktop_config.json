@@ -1,0 +1,19 @@
+{
+  "_comment_": "Claude Desktop / Claude Code의 mcp 설정 파일에 추가할 mailplug-mcp 서버 블록 예시. 실제 파일에서는 이 _comment_ 키와 주석은 모두 제거하고 mcpServers 객체 아래에만 'mailplug' 블록을 넣으면 됩니다.",
+  "mcpServers": {
+    "mailplug": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/crabs-ai/mailplug-mcp", "mailplug-mcp"],
+      "env": {
+        "MAILPLUG_EMAIL": "valla@crabs.ai",
+        "MAILPLUG_DISPLAY_NAME": "이종권",
+        "MAILPLUG_SIGNATURE_MODE": "auto",
+        "MAILPLUG_SIGNATURE_NAME": "이종권",
+        "MAILPLUG_SIGNATURE_TITLE": "대표",
+        "MAILPLUG_SIGNATURE_COMPANY": "주식회사 크랩스",
+        "MAILPLUG_SIGNATURE_PHONE": "010-0000-0000",
+        "MAILPLUG_SIGNATURE_WEBSITE": "crabs.ai"
+      }
+    }
+  }
+}

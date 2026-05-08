@@ -9,7 +9,7 @@ description = "MCP server for Mail Plug — send polished Korean business emails
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
-  { name = "Crabs Inc.", email = "contact@crabs.ai" }
+  { name = "mailplug-mcp contributors", email = "contact@example.com" }
 ]
 requires-python = ">=3.10"
 keywords = ["mcp", "mail", "mailplug", "smtp", "imap", "claude"]
@@ -46,8 +46,8 @@ mailplug-mcp = "mailplug_mcp.server:main"
 mailplug-mcp-setup = "mailplug_mcp.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/crabs-ai/mailplug-mcp"
-Issues = "https://github.com/crabs-ai/mailplug-mcp/issues"
+Homepage = "https://github.com/YOUR-USERNAME/mailplug-mcp"
+Issues = "https://github.com/YOUR-USERNAME/mailplug-mcp/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

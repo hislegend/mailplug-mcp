@@ -3,16 +3,16 @@
   "mcpServers": {
     "mailplug": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/crabs-ai/mailplug-mcp", "mailplug-mcp"],
+      "args": ["--from", "git+https://github.com/YOUR-USERNAME/mailplug-mcp", "mailplug-mcp"],
       "env": {
-        "MAILPLUG_EMAIL": "valla@crabs.ai",
-        "MAILPLUG_DISPLAY_NAME": "이종권",
+        "MAILPLUG_EMAIL": "you@example.com",
+        "MAILPLUG_DISPLAY_NAME": "홍길동",
         "MAILPLUG_SIGNATURE_MODE": "auto",
-        "MAILPLUG_SIGNATURE_NAME": "이종권",
-        "MAILPLUG_SIGNATURE_TITLE": "대표",
-        "MAILPLUG_SIGNATURE_COMPANY": "주식회사 크랩스",
+        "MAILPLUG_SIGNATURE_NAME": "홍길동",
+        "MAILPLUG_SIGNATURE_TITLE": "직책",
+        "MAILPLUG_SIGNATURE_COMPANY": "회사명",
         "MAILPLUG_SIGNATURE_PHONE": "010-0000-0000",
-        "MAILPLUG_SIGNATURE_WEBSITE": "crabs.ai"
+        "MAILPLUG_SIGNATURE_WEBSITE": "example.com"
       }
     }
   }
